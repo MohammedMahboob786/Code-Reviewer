@@ -49,4 +49,4 @@ This project is an AI-powered code reviewing application built using `Pydantic`,
 ## API Keys
 
 - **OpenAI**: To use the GPT-4o-mini model, make sure to place your OpenAI API key in `key.txt`.
-- **Gemini**: To use the Gemini 1.5 Flash model, make sure to place your Gemini API key in `.google_secretkey.txt`.
+- **Gemini**: To use the Gemini 1.5 Flash model, make sure to place your Gemini API key in `key2.txt`.
