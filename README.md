@@ -20,6 +20,8 @@ This project is an AI-powered code reviewing application built using `Pydantic`,
 
 2. **Install dependencies**:
 
+   Create a Virtual Environment and install dependencies.
+   
    ```bash
    pip install -r requirements.txt
    ```
