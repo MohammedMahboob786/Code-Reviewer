@@ -1,12 +1,11 @@
 from typing import List
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import GoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 import streamlit as st
 import openai
-
 
 st.sidebar.title("Model Selection")
 model_choice = st.sidebar.selectbox(
@@ -14,18 +13,18 @@ model_choice = st.sidebar.selectbox(
     ("GPT-4o-mini", "Gemini-1.5-Flash")  
 )
 
-
 if model_choice == "GPT-4o-mini":
     f = open("key.txt")
-    KEY = f.read()
-    model = ChatOpenAI(api_key=KEY,
+    KEY1 = f.read()
+    model = ChatOpenAI(api_key=KEY1,
                    model="gpt-4o-mini",
                    temperature=0)
     
 elif model_choice == "Gemini-1.5-Flash":
-    f = open(".google_secretkey.txt")
-    KEY = f.read()
-    model = GoogleGenerativeAI(google_api_key=KEY,
+    f = open("key2.txt")
+    KEY2 = f.read()
+    
+    model = ChatGoogleGenerativeAI(api_key=KEY2,
                    model="gemini-1.5-flash",
                    temperature=0) 
 

@@ -1,3 +1,4 @@
 .venv
-.google_secretkey.txt
+.env
+key2.txt
 key.txt
