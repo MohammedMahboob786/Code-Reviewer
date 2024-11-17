@@ -26,14 +26,14 @@ This project is an AI-powered code reviewing application built using `Pydantic`,
 
 3. **Add API Keys**:
    - Create a `key.txt` file in the project root and paste your OpenAI API key in it.
-   - Add your Gemini API key in a file named `.google_secretkey.txt`.
+   - Add your Gemini API key in a file named `key2.txt`.
 
 ## Usage
 
 1. **Run the Streamlit app**:
 
    ```bash
-   streamlit run app.py
+   streamlit run code_debugger_langchain.py
    ```
 
 2. **Interacting with the app**:
